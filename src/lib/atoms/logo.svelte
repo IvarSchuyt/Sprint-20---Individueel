@@ -1,0 +1,1 @@
+<img src="./assets/logo.png" alt="Logo van YourJourney" height="74" width="94">
