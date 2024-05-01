@@ -42,6 +42,10 @@ summary {
     list-style: none;
 }
 
+summary::-webkit-details-marker {
+  display: none; 
+}
+
 ul{
     list-style: none;
 }
@@ -87,8 +91,8 @@ a{
     
     .ul-desktop {
         display: flex;
-        width: 50vw;
         justify-content: space-between;
+        width: 42.5vw;
     }
     
 }

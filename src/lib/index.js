@@ -4,6 +4,7 @@
 export { default as Logo } from "./atoms/logo.svelte";
 export { default as NavIcon } from "./atoms/nav-icon-open.svelte";
 export { default as Profile } from "./atoms/profile.svelte";
+export { default as Button } from "./atoms/button.svelte";
 
 // Hier export je alle molecules ------------------------------------------------------------------------------------------------------------
 // Hier export je alle molecules ------------------------------------------------------------------------------------------------------------

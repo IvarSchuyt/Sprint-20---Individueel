@@ -3,12 +3,16 @@
   padding: 0;
 }
 
+button {
+  color: var(--lightmode-text-color);
+}
+
 /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */
 /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */
 /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */ /* CUSTOM PROPERTIES */
 
 :root {
-  --lightmode-color: #3d4666;
+  --lightmode-text-color: #3d4666;
   --lightmode-accent-color: #e6f3f7;
   --lightmode-footer-color: #f0eeec;
   --primary-font-family: "Roboto", sans-serif, helvetica;
