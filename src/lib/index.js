@@ -10,16 +10,10 @@ export { default as Button } from "./atoms/button.svelte";
 // Hier export je alle molecules ------------------------------------------------------------------------------------------------------------
 // Hier export je alle molecules ------------------------------------------------------------------------------------------------------------
 export { default as Nav } from "./molecules/nav.svelte";
+export { default as HeroCard } from "./molecules/hero-card.svelte";
 
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
 export { default as Header } from "./organisms/header.svelte";
-
-// Hier export je alle assets ---------------------------------------------------------------------------------------------------------------
-// Hier export je alle assets ---------------------------------------------------------------------------------------------------------------
-// Hier export je alle assets ---------------------------------------------------------------------------------------------------------------
-// export { default as FooterDark } from "./assets/footer-dark.png";
-// export { default as FooterLight } from "./assets/footer-light.png";
-// export { default as HeroImage } from "./assets/hero-image.png";
-// export { default as Placeholder } from "./assets/placeholder.png";
+export { default as Hero } from "./organisms/hero.svelte";

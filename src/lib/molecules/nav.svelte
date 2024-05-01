@@ -56,6 +56,7 @@ ul{
     top: 7rem;
     width: 100vw;
     left: 0;
+    background: white;
 }
 
 a{
