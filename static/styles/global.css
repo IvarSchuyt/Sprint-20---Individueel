@@ -16,4 +16,6 @@ button {
   --lightmode-accent-color: #e6f3f7;
   --lightmode-footer-color: #f0eeec;
   --primary-font-family: "Roboto", sans-serif, helvetica;
+  --h2-font-size: 1.25rem;
+  --p-font-size: 0.875rem;
 }

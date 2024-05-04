@@ -1,5 +1,5 @@
 <script>
-    	import { Header, Hero } from '$lib/index.js';
+    	import { Text } from '$lib/index.js';
 </script>
 
-<Hero />
+<Text />

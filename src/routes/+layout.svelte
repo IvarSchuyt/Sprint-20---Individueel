@@ -1,9 +1,10 @@
 <script>
 	import { page } from '$app/stores';
-	import { Header } from '$lib/index.js';
+	import { Header, Hero } from '$lib/index.js';
 </script>
 
 <Header />
+<Hero />
 
 <slot />
 

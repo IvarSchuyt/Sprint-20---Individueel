@@ -4,7 +4,7 @@
 
 <section>
     <h1>Teacher Mastery</h1>
-    <h2>Coaching online en in Málaga</h2>
+    <p>Coaching online en in Málaga</p>
     <Button 
         buttonText="Vraag een gesprek aan"
     />
@@ -24,7 +24,6 @@
         color: var(--lightmode-text-color);
         background-image: url(./assets/fingerprints.png);
         background-size: 25rem 20rem;
-        background-attachment: fixed;
         background-position: 30% 40%;
         background-color: white;
         border-radius: 1rem;
@@ -36,7 +35,7 @@
         font-size: 10vw;
     }
 
-    h2{
+    p{
         font-weight: 500;
         font-size: 6vw;
     }
@@ -49,7 +48,7 @@
         h1{
             font-size: 2.5rem;
     }
-        h2{
+        p{
             font-size: 1.5rem;
         }
 }
@@ -59,7 +58,6 @@
             background-position: 30% 50%;
         }
 }
-
 
     @media  (min-width: 850px) {
         section{
