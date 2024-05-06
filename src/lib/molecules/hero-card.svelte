@@ -22,7 +22,7 @@
         border-radius: 1rem;
         font-family: var(--primary-font-family);
         color: var(--lightmode-text-color);
-        background-image: url(./assets/fingerprints.png);
+        background-image: url(/assets/fingerprints.png);
         background-size: 25rem 20rem;
         background-position: 30% 40%;
         background-color: white;

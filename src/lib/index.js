@@ -18,3 +18,4 @@ export { default as Text } from "./molecules/text.svelte";
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
 export { default as Header } from "./organisms/header.svelte";
 export { default as Hero } from "./organisms/hero.svelte";
+export { default as Footer } from "./organisms/footer.svelte";

@@ -6,7 +6,7 @@
     <div>
         <img src="assets/hero-image.jpg" alt="sfeerfoto teacher mastery">
     </div>
-    <HeroCard />
+    <HeroCard/>
 
 </section>
 
