@@ -11,7 +11,7 @@
             </p>
             <p class="next-paragraph">JongLeren.es heeft meer dan 1000 studenten voorzien van een stageplaats en honderden docenten ontvangen tijdens de vele onderwijsprojecten die georganiseerd zijn in de afgelopen jaren. Ook zijn tientallen docenten in opleiding voor inspiratiereizen in Málaga geweest. De vele gesprekken met docenten hebben Joost en Joyce geinspireerd tot het opzetten van teacher Mastery.</p>
         </div>
-        <img src="./assets/joycejoost.jpg" alt="Joyce van Ombergen en Joost Jong" class="img-joycejoost" height="225" width="325">
+        <img src="./assets/joycejoost.jpg" alt="" class="img-joycejoost" height="1080" width="778" loading="lazy" decoding="async">
     </article>
 
     <article class="inhoud">
@@ -21,8 +21,8 @@
             <p class="next-paragraph">Teacher Mastery is ontworpen om docenten uit te dagen en te stimuleren. Tijdens het programma zullen deelnemers thuisopdrachten voltooien voor en na de workshops, wat een waardevolle investering in henzelf is. Na succesvolle afronding van het programma ontvangen deelnemers een certificaat dat hun prestaties en groei erkent.</p>
             <p class="next-paragraph">Bij Teacher Mastery gaat het niet alleen om het verbeteren van vaardigheden als docent, maar ook om het cultiveren van eigen welzijn en tevredenheid. Klaar om de reis te beginnen naar een gezonder, gelukkiger en zinvoller (werk)leven als docent?</p>
         </div>
-        <img src="./assets/laptop.png" alt="Sfeerfoto YourJourney" class="img-desktop" height="200" width="300">
-        <img src="./assets/malaga.jpg" alt="Sfeerfoto Malaga" class="img-malaga" height="225" width="325">
+        <img src="./assets/laptop.png" alt="" class="img-desktop" height="311" width="217" loading="lazy" decoding="async">
+        <img src="./assets/malaga.jpg" alt="" class="img-malaga" height="225" width="325" loading="lazy" decoding="async">
     </article>
 </section>
 
