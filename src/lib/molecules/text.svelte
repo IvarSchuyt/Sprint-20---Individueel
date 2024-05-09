@@ -66,6 +66,11 @@
             max-width: 70rem;
             padding-top: 2rem;
         }
+
+    .img-joycejoost{
+        width: 20rem;
+        height: auto;
+    }
     
     .next-paragraph{
         padding-top: 1rem;
@@ -74,6 +79,11 @@
 
     img{
         padding: 1rem 0 0 0;
+    }
+
+    .img-desktop{
+        width: 20rem;
+        height: auto;
     }
 
     /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */
