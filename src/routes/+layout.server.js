@@ -28,6 +28,27 @@ export async function load() {
             url
           }
         }
+        text {
+          headingMission
+          pMissionDesktop
+          pMissionMobile
+          headingIntro
+          pIntro1
+          pIntro2
+          imgJoyceJoost {
+            url
+          }
+          headingContent
+          pContent1
+          pContent2
+          pContent3
+          imgLaptop {
+            url
+          }
+          imgMalaga {
+            url
+          }
+        }
       }
     }
   `;
