@@ -1,5 +1,8 @@
 <script>
     import { NavIcon, Profile } from '$lib/index.js';
+
+    export let linkHome;
+
 </script>
  
     <nav class="nav-mobile">
@@ -9,7 +12,7 @@
                 <NavIcon />
             </summary>
               <ul class="ul-mobile">
-                <li><a href="#">Home</a></li>
+                <li><a href="#">{linkHome}</a></li>
                 <li><a href="#">Programma</a></li>
                 <li><a href="#">Community</a></li>
                 <li><a href="#">Extra's</a></li>
@@ -21,7 +24,7 @@
 
     <nav class="nav-desktop">
         <ul class="ul-desktop">
-            <li><a href="#">Home</a></li>
+            <li><a href="#">{linkHome}</a></li>
             <li><a href="#">Programma</a></li>
             <li><a href="#">Community</a></li>
             <li><a href="#">Extra's</a></li>

@@ -1,11 +1,15 @@
 <script>
     import { Nav, Logo } from '$lib/index.js';
+    
+    export let linkHome;
 </script>
 
 <header>
 
     <a href="#"><Logo /></a>
-    <Nav />
+    <Nav
+        linkHome="{linkHome}"
+    />
 
 </header>   
 
