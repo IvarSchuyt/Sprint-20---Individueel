@@ -7,9 +7,9 @@
 <section>
     <div>
         <picture>
-            <source media="max-width: 600px" srcset="{img25}">
-            <source media="max-width: 900px" srcset="{img50}">
-            <img src="{img100}" alt="">
+            <source media="(min-width: 900px)" srcset="{img100}">
+            <source media="(min-width: 600px)" srcset="{img50}">
+            <img src="{img25}" alt="">
         </picture>
     </div>
     <HeroCard/>
