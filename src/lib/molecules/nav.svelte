@@ -1,7 +1,7 @@
 <script>
     import { NavIcon, Profile } from '$lib/index.js';
 
-    export let linkHome;
+    export let titleHome, titleProgram, titleCommunity, titleExtras, titleProfile;
 
 </script>
  
@@ -12,11 +12,11 @@
                 <NavIcon />
             </summary>
               <ul class="ul-mobile">
-                <li><a href="#">{linkHome}</a></li>
-                <li><a href="#">Programma</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Extra's</a></li>
-                <li><a href="#">Mijn Account</a></li>
+                <li><a href="/">{titleHome}</a></li>
+                <li><a href="/{titleProgram}">{titleProgram}</a></li>
+                <li><a href="/{titleCommunity}">{titleCommunity}</a></li>
+                <li><a href="/{titleExtras}">{titleExtras}</a></li>
+                <li><a href="/{titleProfile}">{titleProfile}</a></li>
               </ul>
           </details>
         </div>
@@ -24,12 +24,12 @@
 
     <nav class="nav-desktop">
         <ul class="ul-desktop">
-            <li><a href="#">{linkHome}</a></li>
-            <li><a href="#">Programma</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Extra's</a></li>
-            <li class="li-last"><a href="#">Mijn Account</a></li>
-            <li><a href="#"><Profile /></a></li>
+            <li><a href="/">{titleHome}</a></li>
+            <li><a href="/{titleProgram}">{titleProgram}</a></li>
+            <li><a href="/{titleCommunity}">{titleCommunity}</a></li>
+            <li><a href="/{titleExtras}">{titleExtras}</a></li>
+            <li class="li-last"><a href="/{titleProfile}">{titleProfile}</a></li>
+            <li><a href="/{titleProfile}"><Profile /></a></li>
           </ul>
     </nav>
 

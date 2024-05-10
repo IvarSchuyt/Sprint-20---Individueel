@@ -1,10 +1,16 @@
 <script>
     import { HeroCard } from '$lib/index.js';
+
+    export let img25, img50, img100;
 </script>
 
 <section>
     <div>
-        <img src="assets/hero-image.jpg" alt="sfeerfoto teacher mastery">
+        <picture>
+            <source media="max-width: 600px" srcset="{img25}">
+            <source media="max-width: 900px" srcset="{img50}">
+            <img src="{img100}" alt="">
+        </picture>
     </div>
     <HeroCard/>
 

@@ -3,34 +3,30 @@ import { hygraph } from "$lib/utils/hygraph.js";
 
 export async function load() {
   let query = gql`
-    query headerFooter {
+    query MyQuery {
       pages {
         header {
-          logo {
-            logo {
-              url
-            }
-          }
           home
-          programma
+          program
           community
           extras
-          mijnAccount
-        }
-        footer {
+          account
           logo {
             logo {
               url
             }
           }
-          yourJourneyAcadamy
-          yourJourney
-          programma
-          community
-          extras
-          mijnAccount
-          contact
-          contactDetails
+        }
+        hero {
+          hero100 {
+            url
+          }
+          hero50 {
+            url
+          }
+          hero25 {
+            url
+          }
         }
       }
     }

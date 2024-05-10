@@ -1,14 +1,18 @@
 <script>
     import { Nav, Logo } from '$lib/index.js';
     
-    export let linkHome;
+    export let urlLogo, titleHome, titleProgram, titleCommunity, titleExtras, titleProfile;
 </script>
 
 <header>
 
-    <a href="#"><Logo /></a>
+    <a href="/"><Logo urlLogo="{urlLogo}" /></a>
     <Nav
-        linkHome="{linkHome}"
+        titleHome="{titleHome}"
+        titleProgram="{titleProgram}"
+        titleCommunity="{titleCommunity}"
+        titleExtras="{titleExtras}"
+        titleProfile="{titleProfile}"
     />
 
 </header>   

@@ -7,7 +7,12 @@
 </script>
 
 <Header
-	linkHome="{hygraphData.header.home}"
+	urlLogo="{hygraphData.header.logo.logo.url}"
+	titleHome="{hygraphData.header.home}"
+	titleProgram="{hygraphData.header.program}"
+	titleCommunity="{hygraphData.header.community}"
+	titleExtras="{hygraphData.header.extras}"
+	titleProfile="{hygraphData.header.account}"
 />
 
 <slot />
