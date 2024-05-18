@@ -17,38 +17,6 @@ export async function load() {
             }
           }
         }
-        hero {
-          hero100 {
-            url
-          }
-          hero50 {
-            url
-          }
-          hero25 {
-            url
-          }
-        }
-        text {
-          headingMission
-          pMissionDesktop
-          pMissionMobile
-          headingIntro
-          pIntro1
-          pIntro2
-          imgJoyceJoost {
-            url
-          }
-          headingContent
-          pContent1
-          pContent2
-          pContent3
-          imgLaptop {
-            url
-          }
-          imgMalaga {
-            url
-          }
-        }
       }
     }
   `;

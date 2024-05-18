@@ -3,6 +3,7 @@
 
 		export let data;
 		const hygraphData = data.pages[0];
+
 </script>
 
 <Hero 
