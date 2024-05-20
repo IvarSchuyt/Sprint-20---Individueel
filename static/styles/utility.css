@@ -18,5 +18,5 @@ h2 {
 
 p {
   font-size: var(--p-font-size);
-  max-width: 50rem;
+  max-width: 40rem;
 }
