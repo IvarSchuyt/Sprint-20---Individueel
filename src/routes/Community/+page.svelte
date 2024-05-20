@@ -1,5 +1,6 @@
 <script>
-    import { enhance, applyAction } from '$app/forms'  
+    import { enhance, applyAction } from '$app/forms'
+    // import { onMount } from 'svelte'  
     export let form
 
     let loading = false
@@ -20,6 +21,8 @@
             }, 1000);
         }
     }
+
+    export let formObject;
     
 </script>
 

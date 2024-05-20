@@ -4,9 +4,10 @@ export const prerender = false;
 
 export const actions = {
   default: async ({ request, url }) => {
-    const ervaringData = await request.formData();
-    const name = ervaringData.get("name");
-    const ervaring = ervaringData.get("ervaring");
+    const formData = await request.formData();
+    const name = formData.get("name");
+    const ervaring = formData.get("ervaring");
+    const formObject = { name, ervaring };
 
     if (name.length < 2)
       return fail(400, {
@@ -16,6 +17,6 @@ export const actions = {
         ervaring,
       });
 
-    return { success: true, name, ervaring };
+    return { success: true, props: { formObject } };
   },
 };

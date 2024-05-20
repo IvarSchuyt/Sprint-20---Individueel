@@ -28,11 +28,6 @@
         margin-top: -2rem;
     }
 
-    h1{
-        font-weight: 500;
-        font-size: 10vw;
-    }
-
     p{
         font-weight: 500;
         font-size: 6vw;

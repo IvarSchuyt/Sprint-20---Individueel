@@ -39,17 +39,6 @@
 
     h2{
         padding-bottom: 1rem;
-        font-family: var(--primary-font-family);
-        color: var(--lightmode-text-color);
-        font-weight: 500;
-        font-size: var(--h2-font-size);
-    }
-
-    p{
-        font-family: var(--primary-font-family);
-        color: var(--lightmode-text-color);
-        font-size: var(--p-font-size);
-        max-width: 50rem;
     }
 
     .mission{

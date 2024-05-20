@@ -1,28 +1,49 @@
 <script>
-    import { Hero, Text, Program, Goals, Offer } from '$lib/index.js';
+    import { Button } from '$lib/index.js';
 
     export let data;
-    const hygraphData = data.pages[0];
+    const hygraphData = data.programmas[0].program;
 </script>
 
-<Hero 
-img25="{hygraphData.hero.hero25.url}"
-img50="{hygraphData.hero.hero50.url}"
-img100="{hygraphData.hero.hero100.url}"
-/>
-<Text 
-headingMission="{hygraphData.text.headingMission}"
-pMissionDesktop="{hygraphData.text.pMissionDesktop}"
-pMissionMobile="{hygraphData.text.pMissionMobile}"
-headingIntro="{hygraphData.text.headingIntro}"
-pIntro1="{hygraphData.text.pIntro1}"
-pIntro2="{hygraphData.text.pIntro2}"
-imgJoyceJoost="{hygraphData.text.imgJoyceJoost.url}"
-headingContent="{hygraphData.text.headingContent}"
-pContent1="{hygraphData.text.pContent1}"
-pContent2="{hygraphData.text.pContent2}"
-pContent3="{hygraphData.text.pContent3}"
-imgLaptop="{hygraphData.text.imgLaptop.url}"
-imgMalaga="{hygraphData.text.imgMalaga.url}"
+<section>
+    <div class="page-left">
+        <h1>Programma</h1>
 
-/>
+        {#each hygraphData.stepProgram as step, i}
+            <h2 tabindex="0">{step}</h2>
+            <p>{hygraphData.descriptionProgram[i]}</p>
+        {/each}
+    </div>
+    <div class="page-right">
+        <div>
+            <h3>{hygraphData.attendanceBlob.headingBlob}</h3>
+            <p>{hygraphData.attendanceBlob.textBlob}</p>
+        </div>
+        <div>
+            <h3>{hygraphData.blobContact.headingBlob}</h3>
+            <p>{hygraphData.blobContact.textBlob}</p>
+            <p>{hygraphData.blobContact.lineBlob}</p>
+            <ul>
+                <li>{hygraphData.blobContact.emailBlob[0]}</li>
+                <li>{hygraphData.blobContact.emailBlob[1]}</li>
+                <li>{hygraphData.blobContact.emailBlob[2]}</li>
+            </ul>
+            <Button buttonText="Download het volledige programma" />
+        </div>
+    </div>
+</section>
+
+<style>
+    section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-left p{
+        display: none;
+    }
+
+    h2:focus + p, h2:hover + p{
+        display: block;
+    }
+</style>
