@@ -21,7 +21,6 @@
 			// eerste value is relatief aan het trigger-element, tweede value is relatief aan de 'scroller'
 			start: "top +100",
 			end: "center center",
-			markers: {startColor: "dodgerblue", endColor: "dodgerblue", fontSize: "10px", indent: 60},
 			id: 'stagger',
 			scrub: true
 		},
@@ -45,11 +44,23 @@
         <circle r="15" cx="50" cy="450" fill="green" class="swag"/>
         <circle r="25 " cx="50" cy="450" fill="transparent" stroke="black" stroke-width="1" />
         <line x1="50" y1="575" x2="50" y2="475" stroke="black"/>
+        <circle r="15" cx="50" cy="600" fill="green" class="swag"/>
         <circle r="25 " cx="50" cy="600" fill="transparent" stroke="black" stroke-width="1" />
         <line x1="50" y1="725" x2="50" y2="625" stroke="black"/>
+        <circle r="15" cx="50" cy="750" fill="green" class="swag"/>
         <circle r="25 " cx="50" cy="750" fill="transparent" stroke="black" stroke-width="1" />
         <line x1="50" y1="875" x2="50" y2="775" stroke="black"/>
+        <circle r="15" cx="50" cy="900" fill="green" class="swag"/>
         <circle r="25 " cx="50" cy="900" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="1050" x2="50" y2="925" stroke="black"/>
+        <circle r="15" cx="50" cy="1075" fill="green" class="swag"/>
+        <circle r="25 " cx="50" cy="1075" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="1200" x2="50" y2="1100" stroke="black"/>
+        <circle r="15" cx="50" cy="1225" fill="green" class="swag"/>
+        <circle r="25 " cx="50" cy="1225" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="1355" x2="50" y2="1250" stroke="black"/>
+        <circle r="15" cx="50" cy="1380" fill="green" class="swag"/>
+        <circle r="25 " cx="50" cy="1380" fill="transparent" stroke="black" stroke-width="1" />
     </svg>
 
     <div class="page-middle">
@@ -57,8 +68,8 @@
         <ol>
             {#each hygraphData.stepProgram as step, i}
                 <li>
-                    <h2 tabindex="0">{step}</h2>
-                    <p class="popup">{hygraphData.descriptionProgram[i]}</p>
+                    <h2>{step}</h2>
+                    <p>{hygraphData.descriptionProgram[i]}</p>
                 </li>
             {/each}
         </ol>
@@ -78,7 +89,7 @@
                 <li>{hygraphData.blobContact.emailBlob[2]}</li>
             </ul>
         </div>
-
+        <a href="https://drive.google.com/file/d/1oRoYDROmGJBZ75q7Ei3rZaqrHyMZKeVt/view" target="_blank">Download het volledige programma</a>
     </div>
 </section>
 
@@ -86,11 +97,14 @@
     section{
         display: flex;
         flex-direction: column;
-        padding: 0 8rem;
+        padding: 0 2rem;
+        justify-content: center;
+        align-items: center;
     }
 
     svg{
         display: none;
+        max-width: 5rem;
     }
 
     .swag{
@@ -102,10 +116,7 @@
     }
 
     .page-middle p{
-        opacity: 0;
-        max-height: 0;
-        padding-top: 1rem;
-        transition: 200ms ease-out;
+        padding: 1rem 0 0 0;
     }
 
     ol{
@@ -113,16 +124,13 @@
     }
 
     ol > li{
-        margin-bottom: 7rem;
+        margin-bottom: 3rem;
     }
 
-    h2:focus + p, h2:hover + p{
-        max-height: 100vh;
-        opacity: 1;
-    }
     .page-right{
         display: flex;
         flex-direction: column;
+        max-width: 35rem;
     }
 
     ul{
@@ -139,16 +147,42 @@
 
     .attendance{
         margin-bottom: 2rem;
-        top: 1rem;
+        top: 2rem;
     }
 
     .contact{
-        top: 12rem;
+        top: 15rem;
     }
 
     .contact p:nth-of-type(2){
        font-weight: 700;
        padding: 1rem 0;
+    }
+
+    a{
+        position: sticky;
+        text-align: center;
+        padding: .5rem 3rem;
+        background-color: var(--lightmode-accent-color);
+        border: none;
+        border-radius: .25rem;
+        -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        text-decoration: none;
+        margin-top: 2rem;
+        top: 33rem
+    }
+
+    a:hover{
+        cursor: pointer;
+    }
+
+    a:active{
+        -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.175);
+        -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.175);
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.175);
+        scale: .99;
     }
 
     /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */
@@ -159,10 +193,32 @@
         section{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: normal;
     }
         svg{
             display: block;
+        }
+
+        .page-middle{
+            padding: 0 2rem;
+        }
+    }
+    
+    @media  (min-width: 1300px) {
+        section{
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 0 8rem;
+        }
+        .page-right{
+            width: 30vw;
+        }
+        }
+
+    @media  (min-width: 1520px) {
+        .page-right{
+            width: auto;
         }
     }
 </style>
