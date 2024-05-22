@@ -21,7 +21,6 @@
 			// eerste value is relatief aan het trigger-element, tweede value is relatief aan de 'scroller'
 			start: "top +100",
 			end: "center center",
-			id: 'stagger',
 			scrub: true
 		},
 		stagger: 0.1,

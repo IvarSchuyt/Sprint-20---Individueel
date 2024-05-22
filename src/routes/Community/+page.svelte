@@ -1,34 +1,25 @@
 <script>
-    import { enhance, applyAction } from '$app/forms'
-    // import { onMount } from 'svelte'  
+    import { enhance } from '$app/forms'
     export let form
+    export let data;
 
     let loading = false
 
-    function handleForm({formElement, formData}){
-        // Voor de submit
+    function handleForm(){
         loading = true
 
         return async ({ result, update }) => {
-            // fake api post
+            // fake 400ms delay for user feedback
             await setTimeout(() => {
-            // na de submit
-
-                // console.log('result', result)
                 update()
 
                 loading = false  
-            }, 1000);
+            }, 400);
         }
     }
-
-    export let formObject;
-    
 </script>
 
-<!-- Enhance the form with the use:enhance prop -->
-<!-- Custom Enhance form with the use:enhance={handleForm} prop pointing to a custom form handler function -->
-<form  action="/Community" method="POST" class="simple-text" use:enhance={handleForm}> 
+<form action="/Community" method="POST" use:enhance={handleForm}> 
     <h2>Deel jouw ervaring</h2>
     
     {#if form?.error}
@@ -37,16 +28,14 @@
 
     <fieldset>
         <legend>Gegevens</legend>
-        <label><span class="medium-body">Naam</span> <input type="text" name="name" minlength="2" required value="{form?.name ?? ''}"  placeholder="Jan Jansen"/></label>
+        <label><span>Naam</span> <input type="text" name="name" minlength="2" required value="{form?.name ?? ''}"  placeholder="Jan Jansen"/></label>
     </fieldset>
 
     <fieldset>
         <legend>Ervaring</legend>
-        <label for="ervaring" class="medium-body"><span>Jouw ervaring</span></label>
-        <textarea name="ervaring" rows="10" required value="{form?.ervaring ?? ''}"></textarea>
+        <label><span>Voer hier je ervaring in</span> <textarea name="ervaring" rows="10" required value="{form?.ervaring ?? ''}"></textarea></label>
     </fieldset>
 
-    <footer>
         <button>Versturen</button>
         {#if loading }
             <svg class="loader" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -62,10 +51,17 @@
         {/if}
 
         {#if form?.success}
-            <p class="message succes" class:active={form?.success}>Bedankt voor het delen van jouw ervaring!</p>
+            <p class:active={form?.success}>Bedankt voor het delen van jouw ervaring!</p>
         {/if}
-    </footer>
 </form>
+
+<ul>
+    {#each data.communities as community}
+        <li>{community.name}</li>
+        <li>{community.ervaring}</li>
+    {/each}
+</ul>
+
 
 <style>
 
