@@ -1,8 +1,9 @@
 <script>
     import { Button } from '$lib/index.js';
+    export let backgroundImage;
 </script>
 
-<section>
+<section style="background-image: url({backgroundImage});">
     <h1>Teacher Mastery</h1>
     <p>Coaching online en in Málaga</p>
     <Button 
@@ -21,7 +22,6 @@
         padding: 2rem 0;
         font-family: var(--primary-font-family);
         color: var(--lightmode-text-color);
-        background-image: url(/assets/fingerprints.png);
         background-size: 25rem 20rem;
         background-position: 30% 40%;
         background-color: white;

@@ -1,7 +1,7 @@
 <script>
     import { HeroCard } from '$lib/index.js';
 
-    export let img25, img50, img100;
+    export let img25, img50, img100, backgroundImage;
 </script>
 
 <section>
@@ -12,7 +12,9 @@
             <img src="{img25}" alt="">
         </picture>
     </div>
-    <HeroCard/>
+    <HeroCard
+        backgroundImage="{backgroundImage}"
+    />
 
 </section>
 

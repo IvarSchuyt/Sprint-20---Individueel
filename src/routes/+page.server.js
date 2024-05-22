@@ -15,6 +15,9 @@ export async function load() {
           hero25 {
             url
           }
+          fingerprints {
+            url
+          }
         }
         text {
           headingMission

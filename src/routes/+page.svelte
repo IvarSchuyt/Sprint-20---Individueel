@@ -10,6 +10,7 @@
 	img25="{hygraphData.hero.hero25.url}"
 	img50="{hygraphData.hero.hero50.url}"
 	img100="{hygraphData.hero.hero100.url}"
+	backgroundImage="{hygraphData.hero.fingerprints.url}"
 />
 <Text 
 	headingMission="{hygraphData.text.headingMission}"
