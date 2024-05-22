@@ -5,11 +5,12 @@
 
     let loading = false
 
+    // Custom enhancement function
     function handleForm(){
         loading = true
 
         return async ({ result, update }) => {
-            // fake 400ms delay for user feedback
+            // fake 400ms delay voor user feedback
             await setTimeout(() => {
                 update()
 
@@ -19,6 +20,7 @@
     }
 </script>
 
+<!-- Enhanced form -->
 <form action="/Community" method="POST" use:enhance={handleForm}> 
     <h2>Deel jouw ervaring</h2>
     
@@ -38,6 +40,7 @@
 
         <button>Versturen</button>
         {#if loading }
+            <!-- Aninamtie voor custom enhancement -->
             <svg class="loader" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <style>
                     .spinner_qM83{animation:spinner_8HQG .5s infinite; fill:#66e5bf}
@@ -49,12 +52,14 @@
                 <circle class="spinner_qM83 spinner_ZTLf" cx="20" cy="12" r="3"/>
             </svg>
         {/if}
-
+        
+        <!-- Melding voor user feedback -->
         {#if form?.success}
             <p class:active={form?.success}>Bedankt voor het delen van jouw ervaring!</p>
         {/if}
 </form>
 
+<!-- Reviews inladen -->
 <ul>
     {#each data.communities as community}
         <li>{community.name}</li>
