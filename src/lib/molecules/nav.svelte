@@ -97,6 +97,7 @@ a{
         display: flex;
         justify-content: space-between;
         width: 42.5vw;
+        align-items: center;
     }
     
 }
