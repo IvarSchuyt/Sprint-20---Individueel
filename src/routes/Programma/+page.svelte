@@ -112,6 +112,7 @@
 
     h1{
         padding-bottom: 3rem;
+        text-align: center;
     }
 
     .page-middle p{
@@ -197,6 +198,10 @@
     }
         svg{
             display: block;
+        }
+
+        h1{
+            text-align: left;
         }
 
         .page-middle{
