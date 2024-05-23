@@ -1,19 +1,20 @@
 <script>
     import { HeroCard } from '$lib/index.js';
 
-    export let img25, img50, img100, backgroundImage;
+    export let img25, img50, img100;
+    export let data;
 </script>
 
 <section>
     <div>
         <picture>
-            <source media="(min-width: 900px)" srcset="{img100}">
-            <source media="(min-width: 600px)" srcset="{img50}">
-            <img src="{img25}" alt="">
+            <source media="(min-width: 900px)" srcset="{img100}" height="968" width="1451">
+            <source media="(min-width: 600px)" srcset="{img50}" height="854" width="1280">
+            <img src="{img25}" alt="" height="640" width="427">
         </picture>
     </div>
     <HeroCard
-        backgroundImage="{backgroundImage}"
+        {data}
     />
 
 </section>

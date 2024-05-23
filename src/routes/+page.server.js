@@ -15,7 +15,10 @@ export async function load() {
           hero25 {
             url
           }
-          fingerprints {
+          fingerprints1 {
+            url
+          }
+          fingerprints2 {
             url
           }
         }
