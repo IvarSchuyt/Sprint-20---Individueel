@@ -1,31 +1,34 @@
 <script>
-    export let headingMission, pMissionDesktop, pMissionMobile, headingIntro, pIntro1, pIntro2, imgJoyceJoost, headingContent, pContent1, pContent2, pContent3, imgLaptop, imgMalaga;
+    export let data;
+	
+    const hygraphData = data.pages[0];
+
 </script>
 
 <section>
-    <h2 class="mission">{headingMission}</h2>
-    <p class="mission-desktop">{pMissionDesktop}</p>
-    <p class="mission-mobile">{pMissionMobile}
+    <h2 class="mission">{hygraphData.text.headingMission}</h2>
+    <p class="mission-desktop">{hygraphData.text.pMissionDesktop}</p>
+    <p class="mission-mobile">{hygraphData.text.pMissionMobile}
     </p>
 
     <article class="intro">
         <div>
-            <h2>{headingIntro}</h2>
-            <p>{pIntro1}</p>
-            <p class="next-paragraph">{pIntro2}</p>
+            <h2>{hygraphData.text.headingIntro}</h2>
+            <p>{hygraphData.text.pIntro1}</p>
+            <p class="next-paragraph">{hygraphData.text.pIntro2}</p>
         </div>
-        <img src="{imgJoyceJoost}" alt="" class="img-joycejoost" height="427" width="640" loading="lazy" decoding="async">
+        <img src="{hygraphData.text.imgJoyceJoost.url}" alt="" class="img-joycejoost" height="427" width="640" loading="lazy" decoding="async">
     </article>
 
     <article class="inhoud">
         <div>
-            <h2>{headingContent}</h2>
-            <p>{pContent1}</p>
-            <p class="next-paragraph">{pContent2}</p>
-            <p class="next-paragraph">{pContent3}</p>
+            <h2>{hygraphData.text.headingContent}</h2>
+            <p>{hygraphData.text.pContent1}</p>
+            <p class="next-paragraph">{hygraphData.text.pContent2}</p>
+            <p class="next-paragraph">{hygraphData.text.pContent3}</p>
         </div>
-        <img src="{imgLaptop}" alt="" class="img-desktop" height="311" width="217" loading="lazy" decoding="async">
-        <img src="{imgMalaga}" alt="" class="img-malaga" height="389" width="545" loading="lazy" decoding="async">
+        <img src="{hygraphData.text.imgLaptop.url}" alt="" class="img-desktop" height="311" width="217" loading="lazy" decoding="async">
+        <img src="{hygraphData.text.imgMalaga.url}" alt="" class="img-malaga" height="389" width="545" loading="lazy" decoding="async">
     </article>
 </section>
 

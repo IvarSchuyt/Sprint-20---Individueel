@@ -1,7 +1,9 @@
 <script>
     import { NavIcon, Profile } from '$lib/index.js';
     import { onMount } from 'svelte';
-    export let titleHome, titleProgram, titleCommunity, titleExtras, titleProfile;
+    export let data;
+
+    const hygraphData = data.pages[0];
 
     onMount(() => {
     const detailsElement = document.querySelector('nav > details');
@@ -33,12 +35,12 @@
             <NavIcon />
         </summary>
         <ul>
-            <li><a href="/">{titleHome}</a></li>
-            <li><a href="/{titleProgram}">{titleProgram}</a></li>
-            <li><a href="/{titleCommunity}">{titleCommunity}</a></li>
-            <li><a href="/{titleExtras}">{titleExtras}</a></li>
-            <li><a href="/{titleProfile}">{titleProfile}</a></li>
-            <li><a href="/{titleProfile}"><Profile /></a></li>
+            <li><a href="/">{hygraphData.header.home}</a></li>
+            <li><a href="/{hygraphData.header.program}">{hygraphData.header.program}</a></li>
+            <li><a href="/{hygraphData.header.community}">{hygraphData.header.community}</a></li>
+            <li><a href="/{hygraphData.header.extras}">{hygraphData.header.extras}</a></li>
+            <li><a href="/{hygraphData.header.account}">{hygraphData.header.account}</a></li>
+            <li><a href="/{hygraphData.header.account}" aria-label="Mijn Account"><Profile /></a></li>
         </ul>
     </details>
 </nav>

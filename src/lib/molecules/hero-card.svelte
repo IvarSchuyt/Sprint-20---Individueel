@@ -1,10 +1,12 @@
 <script>
     import { Button } from '$lib/index.js';
     export let data;
+
+    const hygraphData = data.pages[0];
 </script>
 
 <section 
-style="background-image: image-set( url('{data.pages[0].hero.fingerprints1.url}') 1x, url('{data.pages[0].hero.fingerprints2.url}') 2x);"
+style="background-image: image-set( url('{hygraphData.hero.fingerprints1.url}') 1x, url('{hygraphData.hero.fingerprints2.url}') 2x);"
 >
     <h1>Teacher Mastery</h1>
     <p>Coaching online en in Málaga</p>

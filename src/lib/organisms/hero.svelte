@@ -1,16 +1,16 @@
 <script>
     import { HeroCard } from '$lib/index.js';
-
-    export let img25, img50, img100;
     export let data;
+
+    const hygraphData = data.pages[0];
 </script>
 
 <section>
     <div>
         <picture>
-            <source media="(min-width: 900px)" srcset="{img100}" height="968" width="1451">
-            <source media="(min-width: 600px)" srcset="{img50}" height="854" width="1280">
-            <img src="{img25}" alt="" height="640" width="427">
+            <source media="(min-width: 900px)" srcset="{hygraphData.hero.hero100.url}" height="968" width="1451">
+            <source media="(min-width: 600px)" srcset="{hygraphData.hero.hero50.url}" height="854" width="1280">
+            <img src="{hygraphData.hero.hero25.url}" alt="" height="640" width="427">
         </picture>
     </div>
     <HeroCard

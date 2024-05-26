@@ -1,19 +1,14 @@
 <script>
     import { Nav, Logo } from '$lib/index.js';
+    export let data;
     
-    export let urlLogo, titleHome, titleProgram, titleCommunity, titleExtras, titleProfile;
+    const hygraphData = data.pages[0];
 </script>
 
 <header>
 
-    <a href="/"><Logo urlLogo="{urlLogo}" /></a>
-    <Nav
-        titleHome="{titleHome}"
-        titleProgram="{titleProgram}"
-        titleCommunity="{titleCommunity}"
-        titleExtras="{titleExtras}"
-        titleProfile="{titleProfile}"
-    />
+    <a href="/" aria-label="Home"><Logo urlLogo="{hygraphData.header.logo.logo.url}" /></a>
+    <Nav {data}/>
 
 </header>   
 
