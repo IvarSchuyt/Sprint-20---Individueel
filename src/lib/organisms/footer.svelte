@@ -15,7 +15,7 @@
             <li><a href="https://www.yourjourney.academy/">YourJourney</a></li>
             <li><a href="/{hygraphData.header.program}">{hygraphData.header.program}</a></li>
             <li><a href="/{hygraphData.header.community}">{hygraphData.header.community}</a></li>
-            <li><a href="/{hygraphData.header.extras}">{hygraphData.header.extras}</a></li>
+            <li><a href="https://www.yourjourney.academy/extras/" target="_blank">{hygraphData.header.extras}</a></li>
             <li><a href="/{hygraphData.header.account}">{hygraphData.header.account}</a></li>
         </ul>
 
