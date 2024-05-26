@@ -17,4 +17,6 @@
 
 <slot />
 
-<Footer />
+<Footer
+urlLogo="{hygraphData.header.logo.logo.url}"
+/>

@@ -1,10 +1,11 @@
 <script>
-    import { Logo } from '$lib/index.js';
+    import { Logo, Instagram, Youtube, WhatsApp, LinkedIn } from '$lib/index.js';
+    export let urlLogo;
 </script>
 
 <footer>
 
-    <picture><Logo /></picture>
+    <picture><Logo urlLogo="{urlLogo}"/></picture>
 
     <div class="footer-bulk">
         <ul class="teacher-mastery">
@@ -29,12 +30,12 @@
         <img src="./assets/footer-dark.png" alt="" height="200" width="250">
         <div class="footer-rest-socials">
             <ul class="socials">
-                <li><a href="#">❤️</a></li>
-                <li><a href="#">❤️</a></li>
-                <li><a href="#">❤️</a></li>
-                <li><a href="#">❤️</a></li>
+                <li><a href="https://wa.me/34627858171"><WhatsApp/></a></li>
+                <li><a href="https://www.instagram.com/yourjourney.a/"><Instagram/></a></li>
+                <li><a href="https://www.youtube.com/channel/UCtcmdIcmiUau0RwDTh4I-Gw"><Youtube/></a></li>
+                <li><a href="https://www.linkedin.com/company/yourjourney.academy/"><LinkedIn/></a></li>
             </ul>
-            <a href="#">Schrijf je in voor de nieuwsbrief & 'stay tuned'!</a>
+            <a href="https://mailchi.mp/yourjourney.academy/inschrijven-nieuwsbrief">Schrijf je in voor de nieuwsbrief & 'stay tuned'!</a>
         </div>
     </div>    
 

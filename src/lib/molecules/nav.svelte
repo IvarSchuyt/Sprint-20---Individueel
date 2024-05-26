@@ -1,42 +1,51 @@
 <script>
     import { NavIcon, Profile } from '$lib/index.js';
-
+    import { onMount } from 'svelte';
     export let titleHome, titleProgram, titleCommunity, titleExtras, titleProfile;
 
+    onMount(() => {
+    const detailsElement = document.querySelector('nav > details');
+
+    function checkWindowSize() {
+        if (window.innerWidth >= 850) {
+        detailsElement.setAttribute('open', '');
+        } else {
+        detailsElement.removeAttribute('open');
+        }
+    }
+
+    // Run once on mount
+    checkWindowSize();
+
+    // Update when window is resized
+    window.addEventListener('resize', checkWindowSize);
+
+    // Cleanup function
+    return () => {
+        window.removeEventListener('resize', checkWindowSize);
+    };
+    });
 </script>
  
-    <nav class="nav-mobile">
-        <div class="dropdown">
-          <details>
-            <summary>
-                <NavIcon />
-            </summary>
-              <ul class="ul-mobile">
-                <li><a href="/">{titleHome}</a></li>
-                <li><a href="/{titleProgram}">{titleProgram}</a></li>
-                <li><a href="/{titleCommunity}">{titleCommunity}</a></li>
-                <li><a href="/{titleExtras}">{titleExtras}</a></li>
-                <li><a href="/{titleProfile}">{titleProfile}</a></li>
-              </ul>
-          </details>
-        </div>
-    </nav>
-
-    <nav class="nav-desktop">
-        <ul class="ul-desktop">
+<nav>
+     <details open>
+        <summary>
+            <NavIcon />
+        </summary>
+        <ul>
             <li><a href="/">{titleHome}</a></li>
             <li><a href="/{titleProgram}">{titleProgram}</a></li>
             <li><a href="/{titleCommunity}">{titleCommunity}</a></li>
             <li><a href="/{titleExtras}">{titleExtras}</a></li>
-            <li class="li-last"><a href="/{titleProfile}">{titleProfile}</a></li>
+            <li><a href="/{titleProfile}">{titleProfile}</a></li>
             <li><a href="/{titleProfile}"><Profile /></a></li>
-          </ul>
-    </nav>
-
+        </ul>
+    </details>
+</nav>
 
 <style>
 
-.nav-mobile {
+nav{
     display: flex;
     justify-content: space-between;
 }
@@ -51,32 +60,27 @@ summary::-webkit-details-marker {
 
 ul{
     list-style: none;
-}
-
-.ul-mobile {
     position: absolute;
+    width: 100vw;
     padding: 0.75em 0;
     top: 7rem;
-    width: 100vw;
     left: 0;
     background: white;
+}
+
+li:last-of-type{
+    display: none;
 }
 
 a{
     text-decoration: none;
     color: var(--lightmode-color);
-}
-
-.ul-mobile  a {
     display: block;
     padding: 0.5rem 2rem;
     text-align: right;
+    position: relative;
 }
 
-.nav-desktop{
-    display: none;
-
-}
 
 /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */
 /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */
@@ -84,26 +88,44 @@ a{
 
 
 @media  (min-width: 850px) {
-    .nav-mobile {
+
+    summary{
         display: none;
     }
-    
-    .nav-desktop{
+
+    ul{
         display: flex;
+        position: relative;
+        top: 0;
+        width: auto;
         align-items: center;
     }
-    
-    .ul-desktop {
-        display: flex;
-        justify-content: space-between;
-        width: 42.5vw;
-        align-items: center;
+
+    li:last-of-type{
+        display: block;
     }
-    
+
+    a::after{
+        content: "";
+        opacity: 0;
+        background-color: var(--lightmode-text-color);
+        transition: all 400ms ease-out;
+        position: absolute;
+        height: 2px;
+        width: calc(100% - 3rem);
+        left: 0;
+        top: 2rem;
+        box-sizing: border-box;
+        transform: translateX(1.5rem);
+    }
+
+    a:hover::after{
+        opacity: .8;
+    }
 }
 
 @media  (max-width: 1100px) {
-    .li-last{
+    li:last-of-type{
         display: none;
     }
 }

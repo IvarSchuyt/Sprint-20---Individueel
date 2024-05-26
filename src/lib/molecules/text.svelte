@@ -61,7 +61,7 @@
 
     .img-joycejoost{
         width: 20rem;
-        height: auto;
+        height: max-content;
     }
     
     .next-paragraph{
@@ -71,11 +71,12 @@
 
     img{
         padding: 1rem 0 0 0;
+        height: max-content;
     }
 
     .img-desktop{
         width: 20rem;
-        height: auto;
+        height: max-content;
     }
 
     /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */
