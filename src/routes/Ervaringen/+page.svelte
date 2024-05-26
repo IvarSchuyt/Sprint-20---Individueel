@@ -23,7 +23,7 @@
 
 <section>
 
-    <h1>Programma</h1>
+    <h1>Ervaringen</h1>
     <h2>Wat vonden anderen van onze service?</h2>
     <p class="p-top">Wij vinden het belangrijk dat wij iedereen zo goed, persoonlijk en efficiënt mogelijk helpen. Lees hieronder hoe andere studenten onze service hebben ervaren!</p>
 

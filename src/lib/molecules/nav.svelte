@@ -27,6 +27,7 @@
         window.removeEventListener('resize', checkWindowSize);
     };
     });
+
 </script>
  
 <nav>
@@ -50,6 +51,10 @@
 nav{
     display: flex;
     justify-content: space-between;
+}
+
+details {
+    view-transition-name: details-open;
 }
 
 summary {
