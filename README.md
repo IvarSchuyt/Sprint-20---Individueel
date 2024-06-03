@@ -26,11 +26,11 @@ Volg deze stappen om het project lokaal te installeren:
    npm install
    npm @graphql-request graphql
    ```
+3. Maak een .env bestand aan en vul het in zoals de example.env
 
-3. Start de ontwikkelingsserver:
+4. Start de ontwikkelingsserver:
    ```bash
    npm run dev
    ```
-4. 
 
 ## Gebruikersinstructies en Configuratie
