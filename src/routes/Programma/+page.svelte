@@ -12,8 +12,8 @@
         gsap.registerPlugin(ScrollTrigger);
         const scrolltrigger = document.querySelector("section");
         if (scrolltrigger) {
-        const swag = scrolltrigger.querySelectorAll("circle, line, .swag");
-        gsap.to(swag, {
+        const animation = scrolltrigger.querySelectorAll("circle, line, .animation");
+        gsap.to(animation, {
             scrollTrigger: {
 			// gebruik de container als relatieve trigger voor de start en end van de animatie
 			trigger: scrolltrigger,
@@ -37,28 +37,28 @@
         <circle r="15" cx="50" cy="125" fill="green"/>
         <circle r="25 " cx="50" cy="125" fill="transparent" stroke="green" stroke-width="1"/>
         <line x1="50" y1="250" x2="50" y2="150" stroke="black"/>
-        <circle r="15" cx="50" cy="275" fill="green" class="swag"/>
+        <circle r="15" cx="50" cy="275" fill="green" class="animation"/>
         <circle r="25 " cx="50" cy="275" fill="transparent" stroke="black" stroke-width="1" />
         <line x1="50" y1="425" x2="50" y2="300" stroke="black"/>
-        <circle r="15" cx="50" cy="450" fill="green" class="swag"/>
+        <circle r="15" cx="50" cy="450" fill="green" class="animation"/>
         <circle r="25 " cx="50" cy="450" fill="transparent" stroke="black" stroke-width="1" />
         <line x1="50" y1="575" x2="50" y2="475" stroke="black"/>
-        <circle r="15" cx="50" cy="600" fill="green" class="swag"/>
+        <circle r="15" cx="50" cy="600" fill="green" class="animation"/>
         <circle r="25 " cx="50" cy="600" fill="transparent" stroke="black" stroke-width="1" />
         <line x1="50" y1="725" x2="50" y2="625" stroke="black"/>
-        <circle r="15" cx="50" cy="750" fill="green" class="swag"/>
+        <circle r="15" cx="50" cy="750" fill="green" class="animation"/>
         <circle r="25 " cx="50" cy="750" fill="transparent" stroke="black" stroke-width="1" />
         <line x1="50" y1="875" x2="50" y2="775" stroke="black"/>
-        <circle r="15" cx="50" cy="900" fill="green" class="swag"/>
+        <circle r="15" cx="50" cy="900" fill="green" class="animation"/>
         <circle r="25 " cx="50" cy="900" fill="transparent" stroke="black" stroke-width="1" />
         <line x1="50" y1="1050" x2="50" y2="925" stroke="black"/>
-        <circle r="15" cx="50" cy="1075" fill="green" class="swag"/>
+        <circle r="15" cx="50" cy="1075" fill="green" class="animation"/>
         <circle r="25 " cx="50" cy="1075" fill="transparent" stroke="black" stroke-width="1" />
         <line x1="50" y1="1200" x2="50" y2="1100" stroke="black"/>
-        <circle r="15" cx="50" cy="1225" fill="green" class="swag"/>
+        <circle r="15" cx="50" cy="1225" fill="green" class="animation"/>
         <circle r="25 " cx="50" cy="1225" fill="transparent" stroke="black" stroke-width="1" />
         <line x1="50" y1="1355" x2="50" y2="1250" stroke="black"/>
-        <circle r="15" cx="50" cy="1380" fill="green" class="swag"/>
+        <circle r="15" cx="50" cy="1380" fill="green" class="animation"/>
         <circle r="25 " cx="50" cy="1380" fill="transparent" stroke="black" stroke-width="1" />
     </svg>
 
@@ -106,7 +106,7 @@
         max-width: 5rem;
     }
 
-    .swag{
+    .animation{
         opacity: 0;
     }
 

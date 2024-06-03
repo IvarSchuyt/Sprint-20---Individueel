@@ -38,7 +38,7 @@
     </div>
 
     <!-- Enhanced form -->
-    <form action="/Community" method="POST" use:enhance={handleForm}> 
+    <form action="/Ervaringen" method="POST" use:enhance={handleForm}> 
         <h3>Deel jouw ervaring</h3>
         
         {#if form?.error}
