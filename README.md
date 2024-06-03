@@ -9,6 +9,7 @@
 * [Gebruikersinstructies en Configuratie]()
 
 ## Inleiding
+Dit project is gemaakt in opdracht van YourJourney. Het doel van dit project was om de bestaande pagina van [teacher mastery](https://www.yourjourney.academy/product/teacher-mastery/) om te toveren tot een volledig losstaande website.
 
 ## Kenmerken
 
