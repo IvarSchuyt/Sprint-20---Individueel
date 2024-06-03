@@ -11,6 +11,10 @@
 Dit project is gemaakt in opdracht van YourJourney. Het doel van dit project was om de bestaande pagina van [teacher mastery](https://www.yourjourney.academy/product/teacher-mastery/) om te toveren tot een volledig losstaande website. Dit project is gebouwd met SvelteKit als framework en Hygraph als CMS. Teacher Mastery is een coachingstraject wat MBO docenten kunnen volgen. Een deel van dit programma is in Nederland en een deel is fysiek in Zuid-Spanje!
 
 ## Kenmerken
+* Homepage: op de homepage kunnen gebruikers informatie vinden over Teacher Mastery, een gesprek aanvragen en de prijs van het programma inzien.
+* Programma:
+* Ervaringen:
+* Profiel:
 
 ## Installatie
 
