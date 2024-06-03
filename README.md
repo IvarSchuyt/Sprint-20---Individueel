@@ -12,8 +12,8 @@ Dit project is gemaakt in opdracht van YourJourney. Het doel van dit project was
 
 ## Kenmerken
 * Homepage: op de homepage kunnen gebruikers informatie vinden over Teacher Mastery, een gesprek aanvragen en de prijs van het programma inzien.
-* Programma:
-* Ervaringen:
+* Programma: op deze pagina staat het programma van Teacher Mastery. Je kan hier het volledige programma downloaden en bijvoorbeeld contact opnemen. De pagina is progressive enhanced met een GSAP animatie.
+* Ervaringen: hier kunnen klanten hun ervaring delen met het teacher mastery programma.
 * Profiel:
 
 ## Installatie
