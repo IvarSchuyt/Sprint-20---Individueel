@@ -17,5 +17,20 @@ Dit project is gemaakt in opdracht van YourJourney. Het doel van dit project was
 * Profiel: Op deze pagina kan de gebruiker zijn abonnement inzien. Hier staan de type abonnementen en de prijzen.
 
 ## Installatie
+Volg deze stappen om het project lokaal te installeren:
+
+1. Clone het project van de GitHub repository:
+
+2. Installeer de benodigde afhankelijkheden:
+   ```bash
+   npm install
+   npm @graphql-request graphql
+   ```
+
+3. Start de ontwikkelingsserver:
+   ```bash
+   npm run dev
+   ```
+4. 
 
 ## Gebruikersinstructies en Configuratie
