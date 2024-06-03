@@ -1,6 +1,5 @@
 # YourJourney Teacher Mastery
-<img width="500" alt="Screenshot 2024-06-03 at 09 56 59" src="https://github.com/IvarSchuyt/Sprint-20---Individueel---YourJourney/assets/112855849/8fd51784-e22f-4680-b161-eba38a290e40">
-<img width="250" alt="Screenshot 2024-06-03 at 09 57 24" src="https://github.com/IvarSchuyt/Sprint-20---Individueel---YourJourney/assets/112855849/e8ffbdf0-e789-45ab-95fd-79609e925208">
+![Group 11](https://github.com/IvarSchuyt/Sprint-20---Individueel---YourJourney/assets/112855849/dfed6a96-8c9e-4c07-a660-da95b4fa3d82)
 
 ## Inhoudsopgave
 * [Inleiding]()
