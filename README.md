@@ -1,38 +1,17 @@
-# create-svelte
+# YourJourney Teacher Mastery
+<img width="750" alt="Screenshot 2024-06-03 at 09 56 59" src="https://github.com/IvarSchuyt/Sprint-20---Individueel---YourJourney/assets/112855849/8fd51784-e22f-4680-b161-eba38a290e40">
+<img width="250" alt="Screenshot 2024-06-03 at 09 57 24" src="https://github.com/IvarSchuyt/Sprint-20---Individueel---YourJourney/assets/112855849/e8ffbdf0-e789-45ab-95fd-79609e925208">
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Inhoudsopgave
+* [Inleiding]()
+* [Kenmerken]()
+* [Installatie]()
+* [Gebruikersinstructies en Configuratie]()
 
-## Creating a project
+## Inleiding
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Kenmerken
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Installatie
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Gebruikersinstructies en Configuratie
