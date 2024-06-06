@@ -25,7 +25,7 @@ Volg deze stappen om het project lokaal te installeren:
    npm install
    npm @graphql-request graphql
    ```
-3. Maak een .env bestand aan en vul het in zoals de [example.env](https://github.com/Trisjan/lets-jam-webapplicatie/blob/main/example.env)
+3. Maak een .env bestand aan en vul het in zoals de [example.env](https://github.com/IvarSchuyt/Sprint-20---Individueel---YourJourney/blob/main/example.env)
 
 4. Start de ontwikkelingsserver:
    ```bash
