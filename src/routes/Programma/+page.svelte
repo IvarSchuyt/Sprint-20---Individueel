@@ -23,7 +23,7 @@
 			end: "center center",
 			scrub: true
 		},
-		stagger: 0.1,
+		stagger: 1,
         stroke: "green",
         opacity: "1",
 	});
@@ -36,30 +36,48 @@
     <svg>
         <circle r="15" cx="50" cy="125" fill="green"/>
         <circle r="25 " cx="50" cy="125" fill="transparent" stroke="green" stroke-width="1"/>
-        <line x1="50" y1="250" x2="50" y2="150" stroke="black"/>
-        <circle r="15" cx="50" cy="275" fill="green" class="animation"/>
-        <circle r="25 " cx="50" cy="275" fill="transparent" stroke="black" stroke-width="1" />
-        <line x1="50" y1="425" x2="50" y2="300" stroke="black"/>
-        <circle r="15" cx="50" cy="450" fill="green" class="animation"/>
-        <circle r="25 " cx="50" cy="450" fill="transparent" stroke="black" stroke-width="1" />
-        <line x1="50" y1="575" x2="50" y2="475" stroke="black"/>
-        <circle r="15" cx="50" cy="600" fill="green" class="animation"/>
-        <circle r="25 " cx="50" cy="600" fill="transparent" stroke="black" stroke-width="1" />
-        <line x1="50" y1="725" x2="50" y2="625" stroke="black"/>
-        <circle r="15" cx="50" cy="750" fill="green" class="animation"/>
-        <circle r="25 " cx="50" cy="750" fill="transparent" stroke="black" stroke-width="1" />
-        <line x1="50" y1="875" x2="50" y2="775" stroke="black"/>
-        <circle r="15" cx="50" cy="900" fill="green" class="animation"/>
-        <circle r="25 " cx="50" cy="900" fill="transparent" stroke="black" stroke-width="1" />
-        <line x1="50" y1="1050" x2="50" y2="925" stroke="black"/>
-        <circle r="15" cx="50" cy="1075" fill="green" class="animation"/>
-        <circle r="25 " cx="50" cy="1075" fill="transparent" stroke="black" stroke-width="1" />
-        <line x1="50" y1="1200" x2="50" y2="1100" stroke="black"/>
+        <line x1="50" y1="150" x2="50" y2="255" stroke="black"/>
+        <circle r="15" cx="50" cy="280" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="280" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="305" x2="50" y2="435" stroke="black"/>
+        <circle r="15" cx="50" cy="460" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="460" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="485" x2="50" y2="590" stroke="black"/>
+        <circle r="15" cx="50" cy="615" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="615" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="640" x2="50" y2="705" stroke="black"/>
+        <circle r="15" cx="50" cy="730" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="730" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="755" x2="50" y2="885" stroke="black"/>
+        <circle r="15" cx="50" cy="910" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="910" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="935" x2="50" y2="1040" stroke="black"/>
+        <circle r="15" cx="50" cy="1065" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="1065" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="1090" x2="50" y2="1200" stroke="black"/>
         <circle r="15" cx="50" cy="1225" fill="green" class="animation"/>
         <circle r="25 " cx="50" cy="1225" fill="transparent" stroke="black" stroke-width="1" />
-        <line x1="50" y1="1355" x2="50" y2="1250" stroke="black"/>
-        <circle r="15" cx="50" cy="1380" fill="green" class="animation"/>
-        <circle r="25 " cx="50" cy="1380" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="1250" x2="50" y2="1375" stroke="black"/>
+        <circle r="15" cx="50" cy="1400" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="1400" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="1425" x2="50" y2="1555" stroke="black"/>
+        <circle r="15" cx="50" cy="1580" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="1580" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="1605" x2="50" y2="1690" stroke="black"/>
+        <circle r="15" cx="50" cy="1715" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="1715" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="1740" x2="50" y2="1825" stroke="black"/>
+        <circle r="15" cx="50" cy="1850" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="1850" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="1875" x2="50" y2="1985" stroke="black"/>
+        <circle r="15" cx="50" cy="2010" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="2010" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="2035" x2="50" y2="2185" stroke="black"/>
+        <circle r="15" cx="50" cy="2210" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="2210" fill="transparent" stroke="black" stroke-width="1" />
+        <line x1="50" y1="2235" x2="50" y2="2315" stroke="black"/>
+        <circle r="15" cx="50" cy="2340" fill="green" class="animation"/>
+        <circle r="25 " cx="50" cy="2340" fill="transparent" stroke="black" stroke-width="1" />
     </svg>
 
     <div class="page-middle">

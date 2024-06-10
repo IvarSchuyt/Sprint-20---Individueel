@@ -1,5 +1,5 @@
 <script>
-    import { NavIcon, Profile } from '$lib/index.js';
+    import { NavIcon } from '$lib/index.js';
     import { onMount } from 'svelte';
     export let data;
 
