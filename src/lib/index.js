@@ -3,7 +3,6 @@
 // Hier export je alle atoms ----------------------------------------------------------------------------------------------------------------
 export { default as Logo } from "./atoms/logo.svelte";
 export { default as NavIcon } from "./atoms/nav-icon-open.svelte";
-export { default as Profile } from "./atoms/profile.svelte";
 export { default as Button } from "./atoms/button.svelte";
 export { default as Instagram } from "./atoms/instagram.svelte";
 export { default as LinkedIn } from "./atoms/linkedin.svelte";
