@@ -25,6 +25,7 @@
     }
          h2{
             padding-bottom: 1rem;
+            font-weight: 600;
     }
         ul{
             font-family: var(--primary-font-family);

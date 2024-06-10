@@ -86,6 +86,10 @@
         padding: 0 2rem;
     }
 
+    h1, h2, span{
+        font-weight: 600;
+    }
+
     .p-top{
         text-align: center;
         margin-bottom: 2rem;

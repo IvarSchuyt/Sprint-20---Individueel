@@ -33,8 +33,12 @@ style="background-image: image-set( url('{hygraphData.hero.fingerprints1.url}') 
     }
 
     p{
-        font-weight: 500;
+        font-weight: 600;
         font-size: 6vw;
+    }
+
+    h1{
+            font-weight: 600;
     }
 
     /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */

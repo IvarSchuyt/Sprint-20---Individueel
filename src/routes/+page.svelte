@@ -5,6 +5,6 @@
 
 <Hero {data} />
 <Text {data} />
-<Program />
+<!-- <Program /> -->
 <Goals />
 <Offer />

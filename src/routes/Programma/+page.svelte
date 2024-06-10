@@ -113,6 +113,7 @@
     h1{
         padding-bottom: 3rem;
         text-align: center;
+        font-weight: 600;
     }
 
     .page-middle p{
@@ -136,6 +137,10 @@
     ul{
         list-style-type: none;
         font-size: var(--p-font-size);
+    }
+    
+    h2{
+        font-weight: 600;
     }
 
     .attendance, .contact{

@@ -27,7 +27,7 @@
         h2{
             font-family: var(--primary-font-family);
             color: var(--lightmode-text-color);
-            font-weight: 500;
+            font-weight: 600;
             font-size: var(--h2-font-size);
             padding-bottom: 1rem;
         }

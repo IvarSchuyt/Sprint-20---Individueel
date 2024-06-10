@@ -42,6 +42,13 @@
 
     h2{
         padding-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
     }
 
     .mission{
@@ -63,8 +70,7 @@
         }
 
     .img-joycejoost{
-        width: 20rem;
-        height: max-content;
+        max-width: 90vw;
     }
     
     .next-paragraph{
@@ -82,6 +88,10 @@
         height: max-content;
     }
 
+    .img-malaga{
+        max-width: 90vw;
+    }
+
     /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */
     /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */
     /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */
@@ -90,6 +100,11 @@
         section{
             padding: 0 7rem;
         }
+
+        article{
+            display: block;
+            align-items:normal;
+    }
 
         .mission-desktop, .img-desktop{
             display: block;
