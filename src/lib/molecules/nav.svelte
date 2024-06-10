@@ -40,8 +40,6 @@
             <li><a href="/{hygraphData.header.program}">{hygraphData.header.program}</a></li>
             <li><a href="/{hygraphData.header.community}">{hygraphData.header.community}</a></li>
             <li><a href="https://www.yourjourney.academy/extras/" target="_blank">{hygraphData.header.extras}</a></li>
-            <li><a href="/{hygraphData.header.account}">{hygraphData.header.account}</a></li>
-            <li><a href="/{hygraphData.header.account}" aria-label="Mijn Account"><Profile /></a></li>
         </ul>
     </details>
 </nav>
@@ -130,12 +128,6 @@ a{
 
     a:hover::after{
         opacity: .8;
-    }
-}
-
-@media  (max-width: 1100px) {
-    li:last-of-type{
-        display: none;
     }
 }
 
