@@ -45,12 +45,6 @@
         font-weight: 600;
     }
 
-    article{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    }
-
     .mission{
         text-align: center;
         padding-top: 2rem;
@@ -65,14 +59,16 @@
     }
 
     article{
-            max-width: 70rem;
-            padding-top: 2rem;
-        }
-
-    .img-joycejoost{
-        max-width: 90vw;
+        max-width: 70rem;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
     }
-    
+
+    .img-joycejoost, .img-malaga{
+        width: 90vw;
+    }
+
     .next-paragraph{
         padding-top: 1rem;
     }
@@ -83,13 +79,14 @@
         height: max-content;
     }
 
+    .inhoud{
+        margin-bottom: 2rem;
+    }
+
     .img-desktop{
         width: 20rem;
         height: max-content;
-    }
-
-    .img-malaga{
-        max-width: 90vw;
+        display: none;
     }
 
     /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */
@@ -102,11 +99,10 @@
         }
 
         article{
-            display: block;
             align-items:normal;
-    }
+        }
 
-        .mission-desktop, .img-desktop{
+        .mission-desktop{
             display: block;
         }
 
@@ -118,12 +114,12 @@
             display: flex;
         }
 
-        .img-joycejoost{
-            padding-left: 2rem;
+        .intro > div{
+            padding-right: 2rem;
         }
 
-        .inhoud{
-            flex-direction: row-reverse;
+        .img-joycejoost{
+            max-width: 25rem;
         }
 
         .img-desktop, .img-malaga{
@@ -131,9 +127,28 @@
         }
 
         .img-desktop{
-            margin-left: -15rem;
-            margin-top: 8rem;
+            margin-left: -18rem;
+            margin-top: 10rem;
+        }
+
+        .img-malaga{
+        max-width: 25rem;
         }
         
-}
+    }
+
+    @media  (min-width: 1150px) {
+         article{
+            flex-direction: row;
+         }
+         .inhoud{
+            flex-direction: row-reverse;
+         }
+    }
+
+    @media  (min-width: 1200px) {
+        .img-desktop{
+            display: block;
+        }
+    }
 </style>
