@@ -11,25 +11,24 @@
     onMount (() => {
         gsap.registerPlugin(ScrollTrigger);
         const scrolltrigger = document.querySelector("section");
-        if (scrolltrigger) {
-        const animation = scrolltrigger.querySelectorAll("circle, line, .animation");
-        gsap.to(animation, {
-            scrollTrigger: {
-			// gebruik de container als relatieve trigger voor de start en end van de animatie
-			trigger: scrolltrigger,
-			scroller: "body",
-			// eerste value is relatief aan het trigger-element, tweede value is relatief aan de 'scroller'
-			start: "top +100",
-			end: "center center",
-			scrub: true
-		},
-		stagger: 1,
-        stroke: "green",
-        opacity: "1",
-	});
-}
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (scrolltrigger && !prefersReducedMotion) {
+            const animation = scrolltrigger.querySelectorAll("circle, line, .animation");
+            gsap.to(animation, {
+                scrollTrigger: {
+                    trigger: scrolltrigger,
+                    scroller: "body",
+                    start: "top +100",
+                    end: "center center",
+                    scrub: true
+                },
+                stagger: 1,
+                stroke: "green",
+                opacity: "1",
+            });
         }
-    );
+    });
 </script>
 
 <section>
