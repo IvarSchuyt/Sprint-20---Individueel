@@ -44,5 +44,9 @@
             justify-content: space-between;
             width: 50%;
         }
+
+        ul:first-of-type{
+            padding-right: 5rem;
+        }
     }
 </style>

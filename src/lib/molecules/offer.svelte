@@ -69,5 +69,10 @@
             width: 50%;
             padding: 1rem 8rem;
         }
+
+        ul:first-of-type{
+            padding-right: 5rem;
+        }
+
     }
 </style>

@@ -47,7 +47,7 @@
 
         <fieldset>
             <!-- <legend>Gegevens</legend> -->
-            <label><span>Naam</span> <input type="text" name="name" minlength="2" required value="{form?.name ?? ''}"  placeholder="Jan Jansen"/></label>
+            <label><span>Naam</span> <input type="text" name="name" minlength="2" required value="{form?.name ?? ''}" placeholder="Jan Jansen"/></label>
         </fieldset>
 
         <fieldset>
@@ -58,21 +58,12 @@
             <Button buttonText="Versturen" />
             {#if loading }
                 <!-- Aninamtie voor custom enhancement -->
-                <svg class="loader" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <style>
-                        .spinner_qM83{animation:spinner_8HQG .5s infinite; fill:#66e5bf}
-                        .spinner_oXPr{animation-delay:.1s}.spinner_ZTLf{animation-delay:.2s}
-                        @keyframes spinner_8HQG{0%,57.14%{animation-timing-function:cubic-bezier(0.33,.66,.66,1);transform:translate(0)}28.57%{animation-timing-function:cubic-bezier(0.33,0,.66,.33);transform:translateY(-6px)}100%{transform:translate(0)}}
-                    </style>
-                    <circle class="spinner_qM83" cx="4" cy="12" r="3"/>
-                    <circle class="spinner_qM83 spinner_oXPr" cx="12" cy="12" r="3"/>
-                    <circle class="spinner_qM83 spinner_ZTLf" cx="20" cy="12" r="3"/>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path fill="none" stroke="#3d4666" stroke-width="16" stroke-linecap="round" stroke-dasharray="300 385" stroke-dashoffset="0" d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z"><animate attributeName="stroke-dashoffset" calcMode="spline" dur="2" values="685;-685" keySplines="0 0 1 1" repeatCount="indefinite"></animate></path></svg>
             {/if}
             
             <!-- Melding voor user feedback -->
             {#if form?.success}
-                <p class:active={form?.success}>Bedankt voor het delen van jouw ervaring!</p>
+                <p class:active={form?.success} id="feedback">Bedankt voor het delen van jouw ervaring!</p>
             {/if}
     </form>
 
@@ -88,6 +79,10 @@
 
     h1, h2, span{
         font-weight: 600;
+    }
+
+    h3{
+        padding-bottom: 1rem;
     }
 
     .p-top{
@@ -124,6 +119,21 @@
         max-height: 10rem;
         padding: .25rem;
     }    
+
+    svg{
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        transform: translateY(13rem) translateX(9.75rem);
+    }
+
+    #feedback{
+        padding-top: 1rem;
+    }
+
+    input{
+        padding: .25rem;
+    }
     
 
     /* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES *//* MEDIA QUERIES */
