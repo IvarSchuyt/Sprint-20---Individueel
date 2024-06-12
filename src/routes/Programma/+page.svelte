@@ -11,10 +11,12 @@
     onMount (() => {
         gsap.registerPlugin(ScrollTrigger);
         const scrolltrigger = document.querySelector("section");
+        // Check if the user has set their system to reduce motion
         const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
         if (scrolltrigger && !prefersReducedMotion) {
             const animation = scrolltrigger.querySelectorAll("circle, line, .animation");
+            // Animate the selected elements when the <section> is scrolled into view
             gsap.to(animation, {
                 scrollTrigger: {
                     trigger: scrolltrigger,
@@ -164,16 +166,7 @@
         background: var(--lightmode-accent-color);
         padding: 2rem;
         border-radius: 1rem;
-        position: sticky;
-    }
-
-    .attendance{
-        margin-bottom: 2rem;
-        top: 2rem;
-    }
-
-    .contact{
-        top: 15rem;
+        margin-bottom: 1rem;
     }
 
     .contact p:nth-of-type(2){
@@ -182,7 +175,6 @@
     }
 
     a{
-        position: sticky;
         text-align: center;
         padding: .5rem 3rem;
         background-color: var(--lightmode-accent-color);
@@ -192,8 +184,7 @@
         -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
         box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
         text-decoration: none;
-        margin-top: 2rem;
-        top: 33rem
+        margin-bottom: 1rem;
     }
 
     a:hover{
@@ -225,6 +216,24 @@
         .page-middle{
             padding: 0 2rem;
         }
+
+        .attendance, .contact, a{
+        position: sticky;
+    }
+
+    .attendance{
+        margin-bottom: 2rem;
+        top: 2rem;
+    }
+
+    .contact{
+        top: 15rem;
+    }
+
+    a{
+        margin-top: 2rem;
+        top: 32.5rem
+    }
     }
     
     @media  (min-width: 1300px) {

@@ -30,7 +30,7 @@
     <div>
         <!-- Reviews inladen -->
         {#each data.communities as community}
-            <article style="block-size: fit-content;">
+            <article>
                 <span class="name">{community.name}</span>
                 <p class="ervaring">{community.ervaring}</p>
             </article>
@@ -46,12 +46,11 @@
         {/if}
 
         <fieldset>
-            <!-- <legend>Gegevens</legend> -->
+            <!-- ?? '' means "if form?.name is null or undefined, use the empty string ('')" -->
             <label><span>Naam</span> <input type="text" name="name" minlength="2" required value="{form?.name ?? ''}" placeholder="Jan Jansen"/></label>
         </fieldset>
 
         <fieldset>
-            <!-- <legend>Ervaring</legend> -->
             <label class="label-ervaring"><span>Voer hier je ervaring in</span> <textarea name="ervaring" rows="10" required value="{form?.ervaring ?? ''}"></textarea></label>
         </fieldset>
 
