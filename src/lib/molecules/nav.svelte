@@ -75,8 +75,8 @@
     ul{
         list-style: none;
         position: absolute;
-        width: 100vw;
-        padding: 0.75em;
+        width: 100%;
+        padding: 0.75em 0;
         top: 7rem;
         left: 0;
         background: white;
@@ -86,9 +86,6 @@
         display: none;
     }
 
-    li{
-        padding-right: 1rem;
-    }
     a{
         text-decoration: none;
         color: var(--lightmode-color);
@@ -105,11 +102,6 @@
         display: none;
     }
 
-    @media  (min-width: 500px) {
-        li{ 
-            padding-right: 2rem;  
-        }
-    }
 
     @media  (min-width: 850px) {
 

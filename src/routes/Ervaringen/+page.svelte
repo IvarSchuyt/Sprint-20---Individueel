@@ -69,13 +69,16 @@
 </section>
 
 <style>
-    section{
+    
+    section, form {
         display: flex;
         flex-direction: column;
-        align-items: center;
         padding: 0 2rem;
     }
-
+    
+    section{
+        align-items: center;
+    }
     h1, h2, span{
         font-weight: 600;
     }
@@ -96,12 +99,6 @@
         margin-bottom: 1rem;
     }
 
-    form{
-        display: flex;
-        flex-direction: column;
-        padding: 2rem 0;
-    }
-
     fieldset{
         border-style: none;
     }
@@ -119,6 +116,10 @@
         padding: .25rem;
     }    
 
+    textarea, input {
+        padding: .25rem;
+    }
+
     svg{
         height: 2rem;
         width: 2rem;
@@ -128,10 +129,6 @@
 
     #feedback{
         padding-top: 1rem;
-    }
-
-    input{
-        padding: .25rem;
     }
     
     @media  (min-width: 850px) {

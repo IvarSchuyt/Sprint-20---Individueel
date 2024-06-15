@@ -200,7 +200,6 @@
 
     @media  (min-width: 850px) {
         section{
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: normal;
@@ -236,7 +235,7 @@
     }
     }
     
-    @media  (min-width: 1300px) {
+    @media  (min-width: 1340px) {
         section{
             flex-wrap: nowrap;
             justify-content: space-between;
@@ -247,7 +246,7 @@
         }
         }
 
-    @media  (min-width: 1520px) {
+    @media  (min-width: 1550px) {
         .page-right{
             width: auto;
         }
